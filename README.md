@@ -34,7 +34,7 @@ Download it and try it out for free!  **https://piebald.ai/**
 > [!tip]
 > **NEW (June 12, 2026):** We've greatly expanded this list with many more of Claude Code's prompts&mdash;**from 350 to 515 (+165)**&mdash;our most complete coverage yet.
 
-This repository contains an up-to-date list of all Claude Code's various system prompts and their associated token counts as of **[Claude Code v2.1.182](https://www.npmjs.com/package/@anthropic-ai/claude-code/v/2.1.182) (June 18th, 2026).**  It also contains a [**CHANGELOG.md**](./CHANGELOG.md) for the system prompts across 214 versions since v2.0.14.  From the team behind [<img src="https://github.com/Piebald-AI/piebald/raw/main/assets/logo.svg" width="15"> **Piebald.**](https://piebald.ai/)
+This repository contains an up-to-date list of all Claude Code's various system prompts and their associated token counts as of **[Claude Code v2.1.185](https://www.npmjs.com/package/@anthropic-ai/claude-code/v/2.1.185) (June 20th, 2026).**  It also contains a [**CHANGELOG.md**](./CHANGELOG.md) for the system prompts across 215 versions since v2.0.14.  From the team behind [<img src="https://github.com/Piebald-AI/piebald/raw/main/assets/logo.svg" width="15"> **Piebald.**](https://piebald.ai/)
 
 **This repository is updated within minutes of each Claude Code release.  See the [changelog](./CHANGELOG.md), and follow [@PiebaldAI](https://x.com/PiebaldAI) on X for a summary of the system prompt changes in each release.**
 
@@ -81,7 +81,7 @@ Sub-agents and utilities.
 #### Creation Assistants
 
 - [Agent Prompt: Agent creation architect](./system-prompts/agent-prompt-agent-creation-architect.md) (**1110** tks) - System prompt for creating custom AI agents with detailed specifications.
-- [Agent Prompt: CLAUDE.md creation](./system-prompts/agent-prompt-claudemd-creation.md) (**607** tks) - System prompt for analyzing codebases and creating CLAUDE.md documentation files.
+- [Agent Prompt: CLAUDE.md creation](./system-prompts/agent-prompt-claudemd-creation.md) (**513** tks) - System prompt for analyzing codebases and creating CLAUDE.md documentation files.
 - [Agent Prompt: Status line setup](./system-prompts/agent-prompt-status-line-setup.md) (**2433** tks) - System prompt for the statusline-setup agent that configures status line display.
 
 #### Slash Commands
@@ -582,7 +582,7 @@ Built-in skill prompts for specialized tasks.
 
 - [Skill: /code-review efficiency dimension](./system-prompts/skill-code-review-efficiency-dimension.md) (**106** tks) - Code-review pass that surfaces wasted effort the diff adds — duplicate computation or I/O, avoidable serialization, large scopes held by closures — and points to the cheaper option.
 - [Skill: /design-sync package source shape](./system-prompts/skill-design-sync-package-source-shape.md) (**16174** tks) - Shape-specific /design-sync instructions for syncing a React design system from a built package without Storybook.
-- [Skill: /init CLAUDE.md and skill setup (new version)](./system-prompts/skill-init-claudemd-and-skill-setup-new-version.md) (**7779** tks) - A comprehensive onboarding flow for setting up CLAUDE.md and related skills/hooks in the current repository, including codebase exploration, user interviews, and iterative proposal refinement.
+- [Skill: /init CLAUDE.md and skill setup (new version)](./system-prompts/skill-init-claudemd-and-skill-setup-new-version.md) (**7589** tks) - A comprehensive onboarding flow for setting up CLAUDE.md and related skills/hooks in the current repository, including codebase exploration, user interviews, and iterative proposal refinement.
 - [Skill: /insights report output](./system-prompts/skill-insights-report-output.md) (**182** tks) - Formats and displays the insights usage report results after the user runs the /insights slash command.
 - [Skill: /loop cloud-first scheduling offer](./system-prompts/skill-loop-cloud-first-scheduling-offer.md) (**510** tks) - Decision tree for offering cloud-based scheduling before falling back to local session loops in the /loop command.
 - [Skill: /loop local runtime note](./system-prompts/skill-loop-local-runtime-note.md) (**96** tks) - Conditional /loop confirmation note explaining that local loops run only until the current session closes.
@@ -615,7 +615,6 @@ Built-in skill prompts for specialized tasks.
 - [Skill: Design sync](./system-prompts/skill-design-sync.md) (**0** tks) - Skill for syncing a React design system to claude.ai/design by configuring the target project, running the converter, verifying previews, and uploading verified artifacts.
 - [Skill: Dynamic pacing loop execution](./system-prompts/skill-dynamic-pacing-loop-execution.md) (**598** tks) - Step-by-step instructions for executing a dynamic pacing loop that runs tasks, arms persistent monitors for event-gated waits, schedules fallback heartbeat ticks, and handles task notifications.
 - [Skill: Generate permission allowlist from transcripts](./system-prompts/skill-generate-permission-allowlist-from-transcripts.md) (**2408** tks) - Analyzes session transcripts to extract frequently used read-only tool-call patterns and adds them to the project's .claude/settings.json permission allowlist to reduce permission prompts.
-- [Skill: Migrate to Claude Code](./system-prompts/skill-migrate-to-claude-code.md) (**376** tks) - Generated SKILL.md instructing the user to finish migrating leftover foreign-agent config that `claude migrate` could not map automatically.
 - [Skill: Model migration guide](./system-prompts/skill-model-migration-guide.md) (**44152** tks) - Step-by-step instructions for migrating existing code to newer Claude models, covering breaking changes, deprecated parameters, per-SDK syntax, prompt-behavior shifts, and migration checklists.
 - [Skill: Run CLI tool example](./system-prompts/skill-run-cli-tool-example.md) (**499** tks) - Example file for the Run app skill showing how to document building, invoking, and testing a CLI tool.
 - [Skill: Run Electron desktop GUI app example](./system-prompts/skill-run-electron-desktop-gui-app-example.md) (**4625** tks) - Example file for the Run app skill showing how to launch an Electron desktop app under xvfb and drive it through a Playwright REPL driver.
